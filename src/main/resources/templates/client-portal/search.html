@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+
+</head>
+<body>
+
+<form method="post">
+
+    <div class="form-group">
+        <label>First Name
+            <input th:field="${client.firstName}" class="form-control">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>Last Name
+            <input th:field="${client.lastName}" class="form-control">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>Middle Name
+            <input th:field="${client.middleName}" class="form-control">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>Date of Birth
+            <input th:field="${client.dobMonth}" class="form-control">
+            <input th:field="${client.dobDay}" class="form-control">
+            <input th:field="${client.dobYear}" class="form-control">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>Social Security Number
+            <input th:field="${client.ssnFirstThree}" class="form-control">
+            <input th:field="${client.ssnMiddleTwo}" class="form-control">
+            <input th:field="${client.ssnLastFour}" class="form-control">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Add New Client" class="btn btn-success"/>
+    </div>
+</form>
+
+</body>
+</html>
